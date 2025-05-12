@@ -1,0 +1,48 @@
+:root {
+  --primary-color: #ff6600;
+  --secondary-color: #ffcc00;
+  --text-color: #333;
+  --bg-color: #f8f8f8;
+  --hover-color: #ff9933;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.button, .add-to-cart, .checkout {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover, .add-to-cart:hover, .checkout:hover {
+  background-color: var(--hover-color);
+}
+
+.card, .menu-item {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
